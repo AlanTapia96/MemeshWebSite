@@ -1,0 +1,113 @@
+/****************Reset/config CSS*********************/
+:root{
+    --main-font: Lora;
+    --font-size: 16px;
+    --main-color: #F69F9F;
+    --second-color: #D5CB8E;
+    /* --main-modal-color: rgba(247,222,30,0.85);
+    --second-modal-color: rgba(34,34,34,0.85); */
+}
+
+html{
+    box-sizing: border-box;
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    font-family: var(--main-font)!important;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.main-color{
+    color: var(--main-color);
+}
+
+.second-color{
+    color: var(--second-color)
+}
+
+
+/********************* NAVBAR *******************************/
+
+.navbar{
+    background-color: #fff;
+    position: relative;
+    z-index: 1500;
+}
+
+.nav-dialog{
+    width: 1rem;
+    height: 1rem;
+}
+
+.vector-nav{
+    position: absolute;
+    margin-top: -2.5rem;
+    width: 100%;
+    z-index: 1000;
+}
+
+.vector-nav__img{
+    min-width: 100%!important;
+}
+
+.navbar-nav a{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}
+
+/********************CAROUSEL****************/
+.h1-carousel{
+    position: absolute;
+    width: 30%;
+    bottom: 5rem;
+    color: white;
+    font-size: 3rem;
+    font-style: italic;
+    line-height: 4.1rem;
+    letter-spacing: 0rem;
+    text-align: left;
+}
+
+
+/***************MIDDLE*****************/
+
+#middle{
+    width: 100%;
+}
+
+
+#middle .row{
+    justify-content: space-between;
+}
+
+#middle .col-3{
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+    border-radius: 15%;
+}
+
+
+
+main{
+    height: 100vh;
+    width: 100%;
+}
