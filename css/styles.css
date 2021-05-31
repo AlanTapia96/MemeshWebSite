@@ -4,6 +4,7 @@
     --font-size: 16px;
     --main-color: #F69F9F;
     --second-color: #D5CB8E;
+    --font-color: #746C6C;
     /* --main-modal-color: rgba(247,222,30,0.85);
     --second-modal-color: rgba(34,34,34,0.85); */
 }
@@ -99,15 +100,73 @@ img{
 }
 
 #middle .col-3{
-    width: 20rem;
-    height: 20rem;
-    border: 1px solid black;
+    display: relative;
+    width: 19rem;
+    height: 19rem;
+    border: .15rem solid rgba(246,159,159,0.2);
     border-radius: 15%;
+    padding: 0;
+}
+
+
+#middle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+#middle h2{
+    position: absolute;
+    display: inline;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 
 
-main{
-    height: 100vh;
-    width: 100%;
+/*******************FOOTER******************/
+footer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #FFEEED;
+}
+
+footer h4{
+    font-family: Lora;
+    color: var(--font-color);
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.5rem;
+    letter-spacing: 0.02em;
+    text-align: left;
+    font-weight: 500;
+}
+
+footer p{
+    font-family: Montserrat!important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #B9ACAC;
+}
+
+.social img{
+    height: 1.125rem;
+    margin-right: .9rem;
+}
+
+.contacto div{
+    display: flex;
+}
+
+.contacto img{
+    margin-right: .5rem;
+    width: 1.25rem;
+    height: 1.1rem;
 }
