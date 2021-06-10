@@ -1,36 +1,65 @@
-var timer = 4000;
+import carousel from "./carousel.js";
+
+const d = document;
+
+d.addEventListener("DOMContentLoaded", e =>{
+    let l = 0;
+
+    d.addEventListener('click',(e)=>{
+        let direction = e.target.parentElement.classList[1];
+        let divChilds = e.target.parentElement.parentElement.childNodes[5].querySelectorAll('div');
+        carousel(direction,divChilds);
+    })
+
+})
 
 
-var i = 0;
-var max = $('#c > li').length;
- 
-$("#c > li").eq(i).addClass('active').css('left','0');
-$("#c > li").eq(i + 1).addClass('active').css('left','25%');
-$("#c > li").eq(i + 2).addClass('active').css('left','50%');
-$("#c > li").eq(i + 3).addClass('active').css('left','75%');
 
 
-setInterval(function(){ 
 
-    $("#c > li").removeClass('active');
 
-    $("#c > li").eq(i).css('transition-delay','0.25s');
-    $("#c > li").eq(i + 1).css('transition-delay','0.5s');
-    $("#c > li").eq(i + 2).css('transition-delay','0.75s');
-    $("#c > li").eq(i + 3).css('transition-delay','1s');
 
-    if (i < max-4) {
-        i = i+4; 
-    }
 
-    else { 
-        i = 0; 
-    }  
 
-    $("#c > li").eq(i).css('left','0').addClass('active').css('transition-delay','1.25s');
-    $("#c > li").eq(i + 1).css('left','25%').addClass('active').css('transition-delay','1.5s');
-    $("#c > li").eq(i + 2).css('left','50%').addClass('active').css('transition-delay','1.75s');
-    $("#c > li").eq(i + 3).css('left','75%').addClass('active').css('transition-delay','2s');
 
-}, timer);
- 
+
+// // document.addEventListener("DOMContentLoaded", e =>{
+//     let span = document.querySelectorAll('#carousel-others .span');
+//     let div = document.querySelectorAll('#carousel-others_imgs div');
+
+//     let prueba = span.div;
+//     console.log(prueba);
+
+
+//     console.log(div);
+//     let l = 0;
+
+
+//     span[0].onclick = () => {
+//         l--;
+
+//         for (const i of div) {
+//             if(l==0) i.style.left = '0px';
+//             if(l==1) i.style.left = '-37rem';
+//             if(l==2) i.style.left = '-75rem';
+//             if(l==3) i.style.left = '-112.5rem';
+//             if(l<0) l=0;
+//         };
+       
+//     }
+    
+//     span[1].onclick = () => {
+//         l++;
+//         for (const i of div) {
+//             if(l==0) i.style.left = '0px';
+//             if(l==1) i.style.left = '-37rem';
+//             if(l==2) i.style.left = '-75rem';
+//             if(l==3) i.style.left = '-112.5rem';
+//             if(l==4) i.style.left = '-145rem';
+//             if(l>4) l=4;
+//         }
+        
+//     }
+    
+    
+// // })
