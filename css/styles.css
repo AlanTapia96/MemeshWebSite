@@ -334,6 +334,10 @@ footer .col-contacto{
     margin-right: 1rem;
 }
 
+.vector-footer{
+    position: relative;
+    top: 3rem;
+}
 
 
 /******************************* ABOUT *************************************/
@@ -587,6 +591,8 @@ footer .col-contacto{
     height: 1.13rem;
 }
 
+
+
 @media only screen and (max-width: 580px){
     
     footer .col-3{
@@ -596,13 +602,43 @@ footer .col-contacto{
     }
 
 
-    #cards .card{
-        height: 9rem;
+    .card{
+        min-height: 7rem!important;
+        height: auto!important;
     }
 
-    /* footer .col-3 img{
-        margin: 0 auto;
-    } */
+    .card-body{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        /* justify-content: space-betw; */
+    }
+
+    .card-body div{
+        width: 100%;
+        
+        padding-right: auto;
+    }
+
+    .card-body img{
+        height: 40%;
+        margin: 0 3rem 0 1rem;
+        margin-bottom: 0!important;
+    }
+
+    #cards .title, .card-text{
+        text-align: left;
+    }
+
+    #cards > div{
+        width: 93%;
+    }
+
+    .pedidosya{
+        margin: 0!important;
+    }
+
 
 }
 
@@ -639,28 +675,29 @@ footer .col-contacto{
         color: rgba(246, 159, 159, 1);
     }
 
+    #about .col-6{
+        width: 100%;
+    }
+    
+    #about .col-8{
+        width: 93%;
+    }
+
+    /* #cards .card{
+        height: 10rem;
+    } */
+}
+
+@media only screen and (min-width: 768px){
+    
     #cards .card{
         height: 10rem;
     }
 }
 
-/* @media only screen and (min-width: 768px){
-    
-
-    #cards .card{
-        height: 10rem;
-    }
-} */
 
 
 
-@media only screen and (min-width: 1200px){
-    
-    #cards .card{
-        height: 9rem;
-    }
-
-}
 
 @media only screen and (max-width: 991px){
     
@@ -695,6 +732,10 @@ footer .col-contacto{
         width: 60%;
     }
 
+    #cards .card{
+        height: 10rem;
+    }
+
     .dialog{
         display: none!important
     }
@@ -708,7 +749,13 @@ footer .col-contacto{
         margin-right: 1rem;
     }
 
+    .vector-footer{
+        top:0!important;
+    }
+}
 
-   
-
+@media only screen and (max-width: 1200px){
+    .vector-footer{
+        top:2em;
+    }
 }
