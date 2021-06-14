@@ -18,45 +18,49 @@
 
     <header>
         <nav class="navbar navbar-expand-lg nav-index">
-          <div class="container">
+          <div class="container-fluid container-custom">
             <a class="navbar-brand" href="./index.html">
                 <img src="./assets/memesh-nav.png" alt="memesh">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse ms-5" id="navbarNav">
-                <div>
+              <div>
                   <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link active main-color" aria-current="page" href="./catalogo.html">Catálogo</a>
+                    <li class="nav-item d-flex align-items-center">
+                      <img class="nav-icon me-2" src="./assets/nav/box.png">
+                      <a class="nav-link active main-color nav-a1" aria-current="page" href="./catalogo.html">Catálogo</a>
                     </li>
-                    <li class="nav-item ms-4">
-                      <a class="nav-link main-color" href="./about.html">Sobre Memesh</a>
+                    <li class="nav-item d-flex align-items-center">
+                      <img class="nav-icon me-2" src="./assets/nav/heart.png">
+                      <a class="nav-link main-color nav-a2" href="./about.html">Sobre Memesh</a>
                     </li>
-                    <li class="nav-item ms-4">
-                      <a class="nav-link second-color" href="https://memesh.empretienda.com.ar/" target="_blank">Tienda Online</a>
+                    <li class="nav-item d-flex align-items-center">
+                      <img class="nav-icon me-2" src="./assets/nav/shopping-cart.png">
+                      <a class="nav-link second-color nav-a3"  href="https://memesh.empretienda.com.ar/" target="_blank">Tienda Online</a>
                     </li>
-                    <li class="nav-item ms-4">
-                      <a class="nav-link second-color" href="https://www.pedidosya.com.ar/restaurantes/esteban-echeverria/memesh-pasteleria-menu?origin=shop_list"  target="_blank">Pedidos Ya</a>
+                    <li class="nav-item d-flex align-items-center">
+                      <img class="nav-icon me-2" src="./assets/nav/tablet.png">
+                      <a class="nav-link second-color nav-a4" href="https://www.pedidosya.com.ar/restaurantes/esteban-echeverria/memesh-pasteleria-menu?origin=shop_list"  target="_blank">Pedidos Ya</a>
                     </li>
                   </ul>
-                </div>
-                <div class="d-flex align-items-center ms-auto">
-                  <img class="nav-dialog me-1" src="./assets/dialog-nav.png">
-                  <a class="nav-link ps-1 pe-0 second-color" href="#">Contacto</a>
-                </div>
-            </div>
+              </div>
+              <div class="d-flex align-items-center ms-auto dialog">
+                <img class="me-1" src="./assets/dialog-nav.png">
+                <a class="nav-link ps-1 pe-0 second-color nav-a5" href="#">Contacto</a>
+              </div>
+          </div>
           </div>
           </nav>
-          
+          <div class="vector-nav">
+            <img class="img-fluid vector-nav__img" src="./assets/vector-nav.png">
+        </div>
     </header>
-    <div class="vector-nav">
-        <img class="img-fluid vector-nav__img" src="./assets/vector-nav.png">
-    </div>
+    
 
     <main>
-        <section id="carrousel">
+        <section id="carousel">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -84,31 +88,29 @@
 
         <section id="middle" class="container my-5">
           <div class="container-fluid">
-            <div class="row d-flex justify-content-between">
-              <div class="col-3">
+            <div class="row d-flex justify-content-between justify-content-sm-around">
+              <div class="col-xl-3 d-none d-md-block col-sm-6 box order-md-first ">
                 <img class="img-fluid" src="./assets/middle/img1 1.png" alt="">
               </div>
-              <div class="col-3 border">
+              <div class="col-xl-3 col-sm-6 box border order-first">
                 <h2 class="main-color">Catálogo</h2>
               </div>
-              <div class="col-3">
+              <div class="col-xl-3 d-none d-md-block box col-sm-6 order-3 order-sm-2 order-md-1 order-xl-0 ">
                 <img class="img-fluid" src="./assets/middle/img2 1.png" alt="">
               </div>
-              <div class="col-3 border">
+              <div class="col-xl-3 col-sm-6 box border order-3 order-xl-0 order-md-0 order-lg-1 order-xl-0">
                 <h2 class="main-color">Tienda Online</h2>
               </div>
-            </div>
-            <div class="row d-flex my-5 justify-content-between">
-              <div class="col-3 border">
+              <div class="col-xl-3 col-sm-6 box border order-1 order-sm-2 order-xl-0 order-lg-2">
                 <h2 class="main-color">Sobre Memesh</h2>
               </div>
-              <div class="col-3">
+              <div class="col-xl-3 d-none d-md-block col-sm-6 box order-sm-4 order-lg-2 order-xl-4">
                 <img class="img-fluid" src="./assets/middle/img3 1.png" alt="">
               </div>
-              <div class="col-3 border">
+              <div class="col-xl-3 col-sm-6 box border order-3 order-md-2">
                 <h2 class="main-color">Pedidos Ya</h2>
               </div>
-              <div class="col-3">
+              <div class="col-xl-3 d-none d-md-block col-sm-6 box order-2 order-md-1 order-xl-0">
                 <img class="img-fluid" src="./assets/middle/img4 1.png" alt="">
               </div>
             </div>
@@ -205,26 +207,35 @@
 
     </main>
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-
+      <div class="container-fluid container-custom">
+        <div class="row d-flex flex-column flex-sm-row">
+          <div class="col-3">
+            <img class="img-fluid" src="./assets/memesh-nav.png" alt="memesh">
           </div>
-          <div class="col-6 d-flex flex-row">
-            <div class="col-4 d-flex flex-column">
+          <div class="col-9 d-flex flex-row justify-content-xl-end justify-content-md-center justify-content-sm-start">
+            <div class="col-3 col-lg-2 d-flex flex-column d-none d-sm-block col-responsive">
               <h4>Catálogo</h4>
               <h4>Sobre Memesh</h4>
+              <div class="d-none d-sm-block d-lg-none">
+                <h4>Tienda Online</h4>
+                <h4>Pedidos Ya</h4>
+                <div class="mt-3 social d-flex">
+                  <img src="./assets/twitter.png" alt="">
+                  <img src="./assets/instagram.png" alt="">
+                  <img src="./assets/facebook.png" alt="">
+                </div>
+              </div>
             </div>
-            <div class="col-4">
+            <div class="col-3 col-lg-2 d-none d-lg-block col-contacto">
               <h4>Tienda Online</h4>
               <h4>Pedidos Ya</h4>
-              <div class="mt-3 social">
+              <div class="mt-3 social d-flex">
                 <img src="./assets/twitter.png" alt="">
                 <img src="./assets/instagram.png" alt="">
                 <img src="./assets/facebook.png" alt="">
               </div>
             </div>
-            <div class="col-4 contacto">
+            <div class="col-3 col-lg-2 contacto">
               <h4>Contacto</h4>
               <div>
                 <img src="./assets/mail.png" alt="">

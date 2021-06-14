@@ -44,12 +44,15 @@ section{
 }
 
 
-
+.container-custom{
+    width: 90%;
+}
 
 /********************* NAVBAR *******************************/
 .navbar{
     position: relative;
     z-index: 1500;
+    /* height: 10vh; */
 }
 
 .nav-index{
@@ -60,20 +63,32 @@ section{
     background-color: #ECF2F0;
 }
 
-.nav-dialog{
+.nav-icon{
+    display: none;
     width: 1rem;
     height: 1rem;
 }
 
+.nav-item{
+    margin-right: 2.5rem;
+}
+
+.dialog{
+    display:block;
+}
+
 .vector-nav{
     position: absolute;
-    margin-top: -2.5rem;
+    margin-top: -1.7rem;
     width: 100%;
     z-index: 100;
+    height: 9.5vh;
 }
 
 .vector-nav__img{
     min-width: 100%!important;
+    position: relative;
+    height: auto;
 }
 
 .navbar-nav a{
@@ -83,13 +98,42 @@ section{
     line-height: 1.5rem;
     letter-spacing: 0.02em;
     text-align: left;
+    transition: .2s;
+}
 
+.nav-a1:hover, .nav-a2:hover{
+    font-size: 1.02rem;
+    color:#d16777;
+}
+
+.nav-a5{
+    transition: .2s;
+}
+
+.nav-a3:hover, .nav-a4:hover, .nav-a5:hover{
+    font-size: 1.03rem;
+    color:#b9a115;
+}
+
+
+.fas{
+    font-size: 2rem;
+    color: rgba(246, 159, 159, 1);
 }
 
 
 
-
 /********************CAROUSEL****************/
+#carousel{
+    position: relative;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+}
+
 .div-h1{
     width: 100%;
 }
@@ -119,7 +163,7 @@ section{
     justify-content: space-between;
 }
 
-#middle .col-3{
+#middle .box{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +171,9 @@ section{
     height: 17em;
     border-radius: 15%;
     padding: 0;
+    margin-top: 1rem;
 }
+
 
 .border{
     border: .15rem solid rgba(246,159,159,0.2)!important; 
@@ -258,7 +304,7 @@ footer h4{
 
 footer p{
     font-family: 'Montserrat'!important;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: 1.2rem;
@@ -284,6 +330,9 @@ footer p{
     height: 1.1rem;
 }
 
+footer .col-contacto{
+    margin-right: 1rem;
+}
 
 
 
@@ -292,9 +341,9 @@ footer p{
     margin-top:7rem!important;
 }
 
-#about .row{
+/* #about .row{
     height: 35vh;
-}
+} */
 
 #about h2{
     font-family: 'Lora';
@@ -328,15 +377,11 @@ footer p{
     color: rgba(116, 108, 108, 1);
 }
 
-#about .img-back{
-    border-radius: 100%;
-    background-color: rgba(255, 248, 242, 1);
-}
 
-#about img{
+/* #about img{
     width: 85%;
     height: 80%;
-}
+} */
 
 
 
@@ -390,10 +435,7 @@ footer p{
     letter-spacing: 0.01em;
     text-align: left;
     color: rgba(116, 108, 108, 1);
-}
-
-#carousel-vegan p, #carousel-savors p{
-    text-align: center;
+    
 }
 
 #celebraciones h2, #celebraciones h3{
@@ -513,6 +555,10 @@ footer p{
     left: 0rem;
 }
 
+.carousel-savors__cards  > div, .carousel-vegan__cards > div{
+    width: 100%;
+}
+
 .carousel-vegan__cards{
     min-width: 22rem;
     height: 10.15rem;
@@ -541,25 +587,128 @@ footer p{
     height: 1.13rem;
 }
 
+@media only screen and (max-width: 580px){
+    
+    footer .col-3{
+        width: 40%;
+        margin-bottom: 1.5rem;
+        padding-left: 2rem;
+    }
 
-/* @media only screen and (max-width: 1200px){
+
+    #cards .card{
+        height: 9rem;
+    }
+
+    /* footer .col-3 img{
+        margin: 0 auto;
+    } */
+
+}
+
+@media only screen and (max-width: 768px){
+    
+    #middle .box{
+        width: 100%;
+        height: 6rem;
+        border-radius: 12%;
+    }
+
+    #middle .box h2{
+        color:white;
+    }
+
+    #middle .row div:nth-child(2){
+        background-color: rgba(197, 218, 209, 1);
+    }
+
+    #middle .row div:nth-child(5){
+        background-color: rgba(213, 203, 142, 1);
+    }
+
+    #middle .row div:nth-child(4){
+        background: rgba(246, 159, 159, 1);
+    }
+ 
+    #middle .row div:nth-child(7){
+        background: rgba(255, 238, 237, 1);
+        color: rgba(246, 159, 159, 1);
+    }
+
+    #middle .row div:nth-child(7) h2{
+        color: rgba(246, 159, 159, 1);
+    }
+
+    #cards .card{
+        height: 10rem;
+    }
+}
+
+/* @media only screen and (min-width: 768px){
     
 
-    #about img{
-        width: 100%;
-        height: 100%;
+    #cards .card{
+        height: 10rem;
+    }
+} */
+
+
+
+@media only screen and (min-width: 1200px){
+    
+    #cards .card{
+        height: 9rem;
     }
 
 }
 
-
-
 @media only screen and (max-width: 991px){
     
+    #navbarNav{
+        margin:1rem 0!important;
+    }
+
+    .vector-nav{
+        margin-top: -1rem;
+    }
+
+    .nav-icon{
+        display:block
+    }
+
+    .navbar-nav li:nth-child(1) a, .navbar-nav li:nth-child(2) a{
+        color:rgba(116, 108, 108, 1);
+    }
+
+    .navbar-nav li:nth-child(3) a, .navbar-nav li:nth-child(4) a{
+        color: rgba(246, 159, 159, 1);
+    }
+
+
+    .carousel-item img{
+        width: 100%;
+        height: 28vh;
+        object-fit: cover;
+    }
+
+    .h1-carousel{
+        width: 60%;
+    }
+
+    .dialog{
+        display: none!important
+    }
 
     #about img{
         width: 70%;
         height: 70%;
     }
 
-} */
+    .col-responsive{
+        margin-right: 1rem;
+    }
+
+
+   
+
+}
