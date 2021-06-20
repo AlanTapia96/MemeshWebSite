@@ -130,7 +130,7 @@ section{
 
 .carousel-item img{
     width: 100%;
-    height: 45vh;
+    height: 57vh;
     object-fit: cover;
 }
 
@@ -141,7 +141,7 @@ section{
 .h1-carousel{
     position: absolute;
     display: inline-block;
-    width: 30%;
+    width: 40%;
     bottom: 5rem;
     color: white;
     font-size: 3rem;
@@ -150,6 +150,14 @@ section{
     letter-spacing: 0rem;
     text-align: left;
 }
+
+.span-div{
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    top: 45%;
+}
+
 
 
 /***************MIDDLE*****************/
@@ -379,13 +387,13 @@ footer .col-contacto{
     font-size: 0.875rem;
     line-height: 1.125rem;
     color: rgba(116, 108, 108, 1);
+
 }
 
 
-/* #about img{
-    width: 85%;
-    height: 80%;
-} */
+#about img{
+    height: 20rem;
+}
 
 
 
@@ -481,29 +489,48 @@ footer .col-contacto{
     margin-right: 1rem;
 }
 
-#celebraciones .row-img, #casamientos .row-img{
+/* #celebraciones .row-img, #casamientos .row-img{
     height: 70%;
-}
+} */
 
-#celebraciones .row-img img, #casamientos .row-img img{
+#celebraciones img, #casamientos img{
     border-radius: 15%; 
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
 
-#celebraciones .col-4 img, #casamientos .col-4 img{
-    border-radius: 15%
-}
 
 #casamientos li div{
     background-color: rgba(255, 238, 237, 1);
 }
 
-
 .nav-catalogo{
     background-color: #F7F5E9;
 }
 
+.row-img-first .col-12{
+    padding: 0;
+}
+
+.col-imgs .row:nth-child(2){
+    margin-top: .7rem;
+}
+
+.col-imgs .row:nth-child(2) .col-4{
+    padding: 0 .3rem 0 0;
+}
+
+
+
+.row-img-first img{
+    height:27rem!important;
+    width:27rem!important;
+}
+
+.row-img-second img{
+    height: 8.875rem!important;
+    width: 8.875rem!important;
+}
 
 
 
@@ -615,6 +642,19 @@ footer .col-contacto{
         /* justify-content: space-betw; */
     }
 
+    .carousel-item img{
+        height:45vh;
+    }
+
+    #carousel .h1-carousel{
+        width: 78%;
+        bottom: 4rem;
+    }
+
+    /* #carousel .h1-carousel h1{
+        padding-top: 4rem;
+    } */
+
     .card-body div{
         width: 100%;
         
@@ -638,7 +678,6 @@ footer .col-contacto{
     .pedidosya{
         margin: 0!important;
     }
-
 
 }
 
@@ -675,24 +714,44 @@ footer .col-contacto{
         color: rgba(246, 159, 159, 1);
     }
 
+    #about{
+        margin-top: 4.5rem!important;
+    }
+
     #about .col-6{
         width: 100%;
     }
     
     #about .col-8{
         width: 93%;
+        margin-top: 2rem!important
     }
 
-    /* #cards .card{
-        height: 10rem;
-    } */
+    #about img{
+        width: 14rem!important;
+        height: 14rem;
+        max-width: none;
+    }
+    
+    #about p{
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    text-align: left;
+    }
+
+    
 }
+
 
 @media only screen and (min-width: 768px){
     
     #cards .card{
         height: 10rem;
     }
+
+    /* #cards .col-12{
+        padding: 0 2rem;
+    } */
 }
 
 
@@ -724,13 +783,13 @@ footer .col-contacto{
 
     .carousel-item img{
         width: 100%;
-        height: 28vh;
         object-fit: cover;
     }
 
     .h1-carousel{
-        width: 60%;
+        width:50%;
     }
+
 
     #cards .card{
         height: 10rem;
@@ -741,8 +800,8 @@ footer .col-contacto{
     }
 
     #about img{
-        width: 70%;
-        height: 70%;
+        width: 100%;
+        height: 14rem;
     }
 
     .col-responsive{
@@ -757,5 +816,9 @@ footer .col-contacto{
 @media only screen and (max-width: 1200px){
     .vector-footer{
         top:2em;
+    }
+
+    #about img{
+        heigth: 18rem!important;
     }
 }
