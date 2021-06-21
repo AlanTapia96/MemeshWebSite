@@ -130,7 +130,7 @@ section{
 
 .carousel-item img{
     width: 100%;
-    height: 57vh;
+    height: 47vh;
     object-fit: cover;
 }
 
@@ -141,9 +141,12 @@ section{
 .h1-carousel{
     position: absolute;
     display: inline-block;
-    width: 40%;
+    width: 50%;
     bottom: 5rem;
     color: white;
+}
+
+.h1-carousel h1{
     font-size: 3rem;
     font-style: italic;
     line-height: 4.1rem;
@@ -156,6 +159,10 @@ section{
     width: 100%;
     height: inherit;
     top: 45%;
+}
+
+.col-imgs{
+    padding-right: 4rem;
 }
 
 
@@ -489,14 +496,10 @@ footer .col-contacto{
     margin-right: 1rem;
 }
 
-/* #celebraciones .row-img, #casamientos .row-img{
-    height: 70%;
-} */
 
 #celebraciones img, #casamientos img{
     border-radius: 15%; 
-    /* width: 100%;
-    height: 100%; */
+
 }
 
 
@@ -520,17 +523,21 @@ footer .col-contacto{
     padding: 0 .3rem 0 0;
 }
 
-
-
 .row-img-first img{
-    height:27rem!important;
-    width:27rem!important;
+    height:29rem;
+    width:34rem;
 }
 
 .row-img-second img{
-    height: 8.875rem!important;
-    width: 8.875rem!important;
+    height: 9rem;
+    width: 11rem;
 }
+
+.row-img-second .col-12{
+    padding: 0.15rem;
+}
+
+
 
 
 
@@ -639,7 +646,6 @@ footer .col-contacto{
         flex-direction: row;
         align-items: center;
         text-align: left;
-        /* justify-content: space-betw; */
     }
 
     .carousel-item img{
@@ -647,13 +653,31 @@ footer .col-contacto{
     }
 
     #carousel .h1-carousel{
-        width: 78%;
+        width: 78%!important;
         bottom: 4rem;
     }
 
-    /* #carousel .h1-carousel h1{
-        padding-top: 4rem;
-    } */
+    #carousel .h1-carousel h1{
+        font-size: 2.7rem;
+        line-height: 3rem;
+    }
+
+    #carousel .h1-carousel h1 br:nth-child(2){
+        display: none;
+    }
+
+    .row-img-first img {
+        width: 19.5rem!important;
+    }
+
+    .row-img-second img {
+        width: 11rem!important;
+        height:
+    }
+
+    .col-imgs{
+        padding-right: 0;
+    }
 
     .card-body div{
         width: 100%;
@@ -739,7 +763,19 @@ footer .col-contacto{
     text-align: left;
     }
 
-    
+    #carousel .h1-carousel{
+        width: 100%;
+    }
+
+    .row-img-second img {
+        height: 8rem!important;
+    }
+
+    .row-img-first img {
+        height: auto;
+        width: 27rem;
+    }
+
 }
 
 
@@ -787,9 +823,12 @@ footer .col-contacto{
     }
 
     .h1-carousel{
-        width:50%;
+        width:60%;
     }
 
+    /* .col-text{
+        padding-left: 0!important;
+    } */
 
     #cards .card{
         height: 10rem;
@@ -811,14 +850,47 @@ footer .col-contacto{
     .vector-footer{
         top:0!important;
     }
+
+
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and /*(min-width: 992px) and */(max-width: 1200px){
     .vector-footer{
         top:2em;
     }
 
+    .row-img-second{
+        margin-left: 1rem;
+        margin-top:0!important;
+    }
+
+    .row-img-second img {
+        height: 10.5rem;
+        width: 13rem;
+    }
+
+    .row-img-first img {
+        height: auto;
+        width: 31rem;
+    }
+
+    .col-text{
+        margin-top:2rem;
+    }
+
     #about img{
-        heigth: 18rem!important;
+        height: 18rem!important;
+    }
+}
+
+
+@media only screen and (min-width: 1200px){
+    
+    #celebraciones .col-text{
+        padding-left: 3rem;
+    }
+
+    #casamientos .col-text{
+        padding-right: 3rem;
     }
 }
