@@ -161,9 +161,7 @@ section{
     top: 45%;
 }
 
-.col-imgs{
-    padding-right: 4rem;
-}
+
 
 
 
@@ -545,8 +543,8 @@ footer .col-contacto{
 .span{
     width: 2.5rem;
     height: 2.5rem;
-    position: absolute;
-    display: flex;
+    position: relative;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     top: 45%;
@@ -561,12 +559,13 @@ footer .col-contacto{
 }
 
 #carousel-vegan .span:nth-of-type(2), #carousel-savors .span:nth-of-type(2){
-    left: 97%;
+    /* left: 97%; */
     text-align: right;
 }
 
 
 #carousel-vegan__cards-container, #carousel-savors__cards-container{
+    width: 90%;
     margin: 20px auto;
     display: flex;
     justify-content: left;
@@ -623,6 +622,15 @@ footer .col-contacto{
     margin-right: 1.5rem;
     width: 1.3rem;
     height: 1.13rem;
+}
+
+.span-div{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: min-content;
+    top: 45%;
+    justify-content: space-between;
 }
 
 
@@ -892,5 +900,9 @@ footer .col-contacto{
 
     #casamientos .col-text{
         padding-right: 3rem;
+    }
+
+    .col-imgs{
+        padding-right: 4rem;
     }
 }
