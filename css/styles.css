@@ -165,26 +165,27 @@ section{
 
 
 
-/***************MIDDLE*****************/
+/***************BOXS*****************/
 
-#middle{
+#boxs{
     width: 100%;
 }
 
 
-#middle .row{
+#boxs .row{
     justify-content: space-between;
 }
 
-#middle .box{
+
+.box,.box-slider{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 17em;
-    height: 17em;
+    width: 19rem;
+    height: 19rem;
     border-radius: 15%;
     padding: 0;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 
@@ -192,7 +193,7 @@ section{
     border: .15rem solid rgba(246,159,159,0.2)!important; 
 }
 
-#middle img{
+#boxs img, #slider img{
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -200,7 +201,7 @@ section{
     display: block;
 }
 
-#middle h2{
+#boxs h2{
     font-family: 'Lora';
     font-size: 1.625rem;
     font-style: normal;
@@ -211,31 +212,31 @@ section{
     
 }
 
-/***************************SLIDER********************************/
+/***************************SLIDER-INF********************************/
 
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+	100% { transform: translateX(calc(-18.5rem * 8))}
 }
 
 
 .slider {
 	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100px;
+	/* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
+	height: 18rem;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
-	width: 960px
+	width: 100%;    
 }
 	
 .slider::before,
 .slider::after {
     background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
     content: "";
-    height: 100px;
+    height: 100%;
     position: absolute;
-    width: 200px;
+    width: 3rem;
     z-index: 2;
 }
 
@@ -251,16 +252,23 @@ section{
 }
 
 .slide-track {
-    animation: scroll 40s linear infinite;
+    animation: scroll 15s linear infinite;
     display: flex;
-    width: calc(250px * 14);
+    height: 100%;
+    width: calc(18.5em * 17);
+    justify-content:center;
+    align-items: center;
 }
 
-.slide-two {
-    height: 100px;
-    width: 250px;
+.box-slider{
+    width: 17em;
+    height: 17em;
+    margin-right: 1.5rem;
 }
 
+#slider-inf img {
+    border-radius: 15%;
+}
 
 /********************CARDS**********************/
 
@@ -355,7 +363,7 @@ footer .col-contacto{
 
 /******************************* ABOUT *************************************/
 #about{
-    margin-top:7rem!important;
+    margin-top:10rem!important;
 }
 
 /* #about .row{
@@ -447,7 +455,7 @@ footer .col-contacto{
     font-family: 'Montserrat';
     font-size: 0.875rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 580;
     line-height: 1.125rem;
     letter-spacing: 0.01em;
     text-align: left;
@@ -463,22 +471,18 @@ footer .col-contacto{
     color: rgba(197, 218, 209, 1);
 }
 
-#celebraciones ul p{
-    margin-left: 0.8rem;
-}
-
-#celebraciones ul li:nth-child(1) div{
-    background-color: #D5CB8E;
-}
-#celebraciones ul li:nth-child(2) div{
-    background-color: #C5DAD1;
-}
-#celebraciones ul li:nth-child(3) div{
-    background-color: #F79F9F;
-}
-#celebraciones ul li:nth-child(4) div{
+#celebraciones ul li div{
     background-color: #FFEEED;
 }
+
+#celebraciones ul p{
+    margin-left: 0.8rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.125rem;
+    margin-bottom: .6rem;
+}
+
 
 #celebraciones li, #casamientos li{
     display: flex;
@@ -535,6 +539,16 @@ footer .col-contacto{
     padding: 0.15rem;
 }
 
+.cards-title{
+    color: rgba(213, 203, 142, 1);
+    font-family: 'Lora';
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.06rem;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
 
 
 
@@ -624,6 +638,16 @@ footer .col-contacto{
     height: 1.13rem;
 }
 
+#carousel-vegan p:first-child{
+    font-family: 'Lora';
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.65rem;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
 .span-div{
     position: absolute;
     display: flex;
@@ -634,8 +658,21 @@ footer .col-contacto{
 }
 
 
+@media only screen and (max-width: 300px){
+    #carousel .h1-carousel{
+        width: 80%!important;
+        bottom: 2.5rem;
+    }
 
-@media only screen and (max-width: 580px){
+    #carousel .h1-carousel h1{
+        font-size: 1.95rem;
+        line-height: 3rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 580px){
     
     footer .col-3{
         width: 40%;
@@ -657,16 +694,16 @@ footer .col-contacto{
     }
 
     .carousel-item img{
-        height:45vh;
+        height:40vh;
     }
 
     #carousel .h1-carousel{
         width: 78%!important;
-        bottom: 4rem;
+        bottom: 3rem;
     }
 
     #carousel .h1-carousel h1{
-        font-size: 2.7rem;
+        font-size: 2.2rem;
         line-height: 3rem;
     }
 
@@ -715,34 +752,36 @@ footer .col-contacto{
 
 @media only screen and (max-width: 768px){
     
-    #middle .box{
+    #boxs .box{
         width: 100%;
-        height: 6rem;
-        border-radius: 12%;
+        height: 9rem;
+        border-radius: 1.5rem;
+        border-style: none!important;
+        margin-top: 1rem;
     }
 
-    #middle .box h2{
+    #boxs .box h2{
         color:white;
     }
 
-    #middle .row div:nth-child(2){
+    #boxs .row div:nth-child(2){
         background-color: rgba(197, 218, 209, 1);
     }
 
-    #middle .row div:nth-child(5){
+    #boxs .row div:nth-child(5){
         background-color: rgba(213, 203, 142, 1);
     }
 
-    #middle .row div:nth-child(4){
+    #boxs .row div:nth-child(4){
         background: rgba(246, 159, 159, 1);
     }
  
-    #middle .row div:nth-child(7){
+    #boxs .row div:nth-child(7){
         background: rgba(255, 238, 237, 1);
         color: rgba(246, 159, 159, 1);
     }
 
-    #middle .row div:nth-child(7) h2{
+    #boxs .row div:nth-child(7) h2{
         color: rgba(246, 159, 159, 1);
     }
 
@@ -761,14 +800,13 @@ footer .col-contacto{
 
     #about img{
         width: 14rem!important;
-        height: 14rem;
         max-width: none;
     }
     
     #about p{
-    font-weight: 400;
-    letter-spacing: 0.01em;
-    text-align: left;
+        font-weight: 400;
+        letter-spacing: 0.01em;
+        text-align: left;
     }
 
     #carousel .h1-carousel{
@@ -834,9 +872,6 @@ footer .col-contacto{
         width:60%;
     }
 
-    /* .col-text{
-        padding-left: 0!important;
-    } */
 
     #cards .card{
         height: 10rem;
@@ -846,10 +881,6 @@ footer .col-contacto{
         display: none!important
     }
 
-    #about img{
-        width: 100%;
-        height: 14rem;
-    }
 
     .col-responsive{
         margin-right: 1rem;
@@ -887,7 +918,7 @@ footer .col-contacto{
     }
 
     #about img{
-        height: 18rem!important;
+        height: 15rem!important;
     }
 }
 
