@@ -517,13 +517,6 @@ footer .col-contacto{
     padding: 0;
 }
 
-.col-imgs .row:nth-child(2){
-    margin-top: .7rem;
-}
-
-.col-imgs .row:nth-child(2) .col-4{
-    padding: 0 .3rem 0 0;
-}
 
 .row-img-first img{
     height:29rem;
@@ -535,7 +528,7 @@ footer .col-contacto{
     width: 11rem;
 }
 
-.row-img-second .col-12{
+.row-img-second .col-md-12{
     padding: 0.15rem;
 }
 
@@ -658,96 +651,98 @@ footer .col-contacto{
 }
 
 
-@media only screen and (max-width: 300px){
-    #carousel .h1-carousel{
-        width: 80%!important;
-        bottom: 2.5rem;
+@media only screen and (max-width: 1200px){
+    .vector-footer{
+        top:2em;
     }
 
-    #carousel .h1-carousel h1{
-        font-size: 1.95rem;
-        line-height: 3rem;
-    }
-
-
-}
-
-@media only screen and (min-width: 300px) and (max-width: 580px){
-    
-    footer .col-3{
-        width: 40%;
-        margin-bottom: 1.5rem;
-        padding-left: 2rem;
-    }
-
-
-    .card{
-        min-height: 7rem!important;
-        height: auto!important;
-    }
-
-    .card-body{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: left;
-    }
-
-    .carousel-item img{
-        height:40vh;
-    }
-
-    #carousel .h1-carousel{
-        width: 78%!important;
-        bottom: 3rem;
-    }
-
-    #carousel .h1-carousel h1{
-        font-size: 2.2rem;
-        line-height: 3rem;
-    }
-
-    #carousel .h1-carousel h1 br:nth-child(2){
-        display: none;
-    }
-
-    .row-img-first img {
-        width: 19.5rem!important;
+    .row-img-second{
+        margin-left: 1rem;
+        margin-top:0
     }
 
     .row-img-second img {
-        width: 11rem!important;
-        height:
+        height: 10.5rem;
+        width: 13rem;
     }
 
-    .col-imgs{
-        padding-right: 0;
+    .row-img-first img {
+        height: auto;
+        width: 31rem;
     }
 
-    .card-body div{
+    .col-text{
+        margin-top:2rem;
+    }
+
+    #about img{
+        height: 15rem!important;
+    }
+}
+
+
+
+@media only screen and (max-width: 991px){
+    
+    #navbarNav{
+        margin:1rem 0!important;
+    }
+
+    .vector-nav{
+        margin-top: -1rem;
+    }
+
+    .nav-icon{
+        display:block
+    }
+
+    .navbar-nav li:nth-child(1) a, .navbar-nav li:nth-child(2) a{
+        color:rgba(116, 108, 108, 1);
+    }
+
+    .navbar-nav li:nth-child(3) a, .navbar-nav li:nth-child(4) a{
+        color: rgba(246, 159, 159, 1);
+    }
+
+
+    .carousel-item img{
         width: 100%;
-        
-        padding-right: auto;
+        object-fit: cover;
     }
 
-    .card-body img{
-        height: 40%;
-        margin: 0 3rem 0 1rem;
-        margin-bottom: 0!important;
+    .h1-carousel{
+        width:60%;
     }
 
-    #cards .title, .card-text{
-        text-align: left;
+
+    #cards .card{
+        height: 10rem;
     }
 
-    #cards > div{
-        width: 93%;
+    .dialog{
+        display: none!important
     }
 
-    .pedidosya{
-        margin: 0!important;
+
+    .col-responsive{
+        margin-right: 1rem;
     }
 
+    .vector-footer{
+        top:0!important;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+    
+    #cards .card{
+        height: 10rem;
+    }
+
+    /* #cards .col-12{
+        padding: 0 2rem;
+    } */
 }
 
 @media only screen and (max-width: 768px){
@@ -813,113 +808,114 @@ footer .col-contacto{
         width: 100%;
     }
 
+    .row-img-second{
+        margin-left: 0rem;
+        margin-top: 1rem;
+    } 
+
     .row-img-second img {
-        height: 8rem!important;
+        height: 8rem
     }
+
 
     .row-img-first img {
         height: auto;
-        width: 27rem;
+        width: 100%;
+    }
+
+    .row-img-second img{
+        height: 9rem;
     }
 
 }
 
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 300px) and (max-width: 580px){
     
-    #cards .card{
-        height: 10rem;
+    footer .col-3{
+        width: 40%;
+        margin-bottom: 1.5rem;
+        padding-left: 2rem;
     }
 
-    /* #cards .col-12{
-        padding: 0 2rem;
-    } */
-}
 
-
-
-
-
-@media only screen and (max-width: 991px){
-    
-    #navbarNav{
-        margin:1rem 0!important;
+    .card{
+        min-height: 7rem!important;
+        height: auto!important;
     }
 
-    .vector-nav{
-        margin-top: -1rem;
+    .card-body{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
     }
-
-    .nav-icon{
-        display:block
-    }
-
-    .navbar-nav li:nth-child(1) a, .navbar-nav li:nth-child(2) a{
-        color:rgba(116, 108, 108, 1);
-    }
-
-    .navbar-nav li:nth-child(3) a, .navbar-nav li:nth-child(4) a{
-        color: rgba(246, 159, 159, 1);
-    }
-
 
     .carousel-item img{
+        height:40vh;
+    }
+
+    #carousel .h1-carousel{
+        width: 78%!important;
+        bottom: 3rem;
+    }
+
+    #carousel .h1-carousel h1{
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+
+    #carousel .h1-carousel h1 br:nth-child(2){
+        display: none;
+    }
+
+    .row-img-first, .row-img-second{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row-img-second img{
+        width:100%;
+        height: auto;
+    }
+
+    .card-body div{
         width: 100%;
-        object-fit: cover;
+        padding-right: auto;
     }
 
-    .h1-carousel{
-        width:60%;
+    .card-body img{
+        height: 40%;
+        margin: 0 3rem 0 1rem;
+        margin-bottom: 0!important;
     }
 
-
-    #cards .card{
-        height: 10rem;
+    #cards .title, .card-text{
+        text-align: left;
     }
 
-    .dialog{
-        display: none!important
+    #cards > div{
+        width: 93%;
     }
 
-
-    .col-responsive{
-        margin-right: 1rem;
+    .pedidosya{
+        margin: 0!important;
     }
-
-    .vector-footer{
-        top:0!important;
-    }
-
 
 }
 
-@media only screen and /*(min-width: 992px) and */(max-width: 1200px){
-    .vector-footer{
-        top:2em;
+@media only screen and (max-width: 300px){
+    #carousel .h1-carousel{
+        width: 80%!important;
+        bottom: 2.5rem;
     }
 
-    .row-img-second{
-        margin-left: 1rem;
-        margin-top:0!important;
+    #carousel .h1-carousel h1{
+        font-size: 1.95rem;
+        line-height: 3rem;
     }
 
-    .row-img-second img {
-        height: 10.5rem;
-        width: 13rem;
-    }
 
-    .row-img-first img {
-        height: auto;
-        width: 31rem;
-    }
-
-    .col-text{
-        margin-top:2rem;
-    }
-
-    #about img{
-        height: 15rem!important;
-    }
 }
 
 
