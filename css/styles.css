@@ -91,18 +91,42 @@ section{
     height: auto;
 }
 
-.navbar-nav a{
-    font-size: 1rem;
+.navbar-nav a, .nav-a5{
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5rem;
     letter-spacing: 0.02em;
     text-align: left;
     transition: .2s;
+    position: relative;
 }
 
+.navbar-nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #2a292b, #646162, #9e9b9c);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease-in-out;
+  }
+
+ .navbar-nav a:hover::before {
+    transform: scaleX(1);
+  }
+
+.navbar-nav[data-animation="center"] a::before {
+    transform-origin: center;
+  }
+
+
 .nav-a1:hover, .nav-a2:hover{
-    font-size: 1.02rem;
+    font-size: 1.12rem;
     color:#d16777;
 }
 
@@ -111,9 +135,11 @@ section{
 }
 
 .nav-a3:hover, .nav-a4:hover, .nav-a5:hover{
-    font-size: 1.03rem;
+    font-size: 1.12rem;
     color:#b9a115;
 }
+
+
 
 
 .fas{
@@ -209,7 +235,14 @@ section{
     line-height: 2.06rem;
     letter-spacing: 0.02em;
     text-align: center;
-    
+}
+
+#boxs a{
+    text-decoration: none;
+}
+
+.box:hover{
+
 }
 
 /***************************SLIDER-INF********************************/
@@ -321,6 +354,7 @@ footer h4{
     letter-spacing: 0.02em;
     text-align: left;
     font-weight: 500;
+    /* display: inline-block; */
 }
 
 footer p{
@@ -332,6 +366,16 @@ footer p{
     letter-spacing: 0.01em;
     text-align: left;
     color: #B9ACAC;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: var(--font-color);
 }
 
 .social img{
@@ -677,6 +721,14 @@ footer .col-contacto{
 
     #about img{
         height: 15rem!important;
+    }
+
+    .navbar-nav a, .nav-a5{
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-item{
+        margin-right: 1rem;
     }
 }
 
