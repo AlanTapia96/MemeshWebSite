@@ -112,8 +112,8 @@ section{
     background: linear-gradient(to right, #2a292b, #646162, #9e9b9c);
     z-index: 1;
     transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.25s ease-in-out;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
   }
 
  .navbar-nav a:hover::before {
@@ -619,8 +619,8 @@ footer .col-contacto{
 
 
 #carousel-vegan__cards-container, #carousel-savors__cards-container{
-    width: 90%;
-    margin: 20px auto;
+    width: 95%;
+    margin: 1rem 2rem;
     display: flex;
     justify-content: left;
     background-color: #FFF;
@@ -695,6 +695,10 @@ footer .col-contacto{
     height: min-content;
     top: 45%;
     justify-content: space-between;
+}
+
+#carousel-vegan .span-div{
+    top: 57%;
 }
 
 
@@ -795,9 +799,6 @@ footer .col-contacto{
         height: 10rem;
     }
 
-    /* #cards .col-12{
-        padding: 0 2rem;
-    } */
 }
 
 @media only screen and (max-width: 768px){
@@ -985,6 +986,10 @@ footer .col-contacto{
     }
 
     .col-imgs{
-        padding-right: 4rem;
+        padding-right: 3rem;
+    }
+
+    .row-img-second{
+        margin-top: 1rem;
     }
 }
