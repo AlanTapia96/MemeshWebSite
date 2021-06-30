@@ -407,6 +407,28 @@ footer .col-contacto{
     top: 3rem;
 }
 
+.whatsapp{
+    position: absolute;
+    width:3.5rem;
+    height:3.5rem;
+    margin: 0 1rem .5rem 0;
+    bottom: 0;
+    right: 0;
+    background-color:#25d366;
+    border-radius:50px;
+    text-align:center;
+    font-size:1.875rem;
+    z-index:100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp-icon {
+    color:#FFF;
+    /* margin-top:13px; */
+}
+
 
 /******************************* ABOUT *************************************/
 #about{
