@@ -52,7 +52,12 @@ section{
 .navbar{
     position: relative;
     z-index: 1500;
-    /* height: 10vh; */
+}
+
+.img-logo{
+    width: 4.5rem;
+    height: 4.5rem;
+    max-width: none;
 }
 
 .nav-index{
@@ -79,7 +84,7 @@ section{
 
 .vector-nav{
     position: absolute;
-    margin-top: -1.7rem;
+    margin-top: -2rem;
     width: 100%;
     z-index: 100;
     height: 9.5vh;
@@ -102,7 +107,7 @@ section{
     position: relative;
 }
 
-.navbar-nav a::before {
+.collapse a::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -116,11 +121,11 @@ section{
     transition: transform 0.25s ease-out;
   }
 
- .navbar-nav a:hover::before {
+ .collapse a:hover::before {
     transform: scaleX(1);
   }
 
-.navbar-nav[data-animation="center"] a::before {
+.collapse[data-animation="center"] a::before {
     transform-origin: center;
   }
 
@@ -268,7 +273,6 @@ section{
 	
 .slider::before,
 .slider::after {
-    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
     content: "";
     height: 100%;
     position: absolute;
@@ -288,7 +292,7 @@ section{
 }
 
 .slide-track {
-    animation: scroll 15s linear infinite;
+    animation: scroll 50s linear infinite;
     display: flex;
     height: 100%;
     width: calc(18.5em * 17);
@@ -408,13 +412,12 @@ footer .col-contacto{
 }
 
 .whatsapp{
-    position: absolute;
+    position: fixed;
     width:3.5rem;
     height:3.5rem;
     margin: 0 1rem .5rem 0;
     bottom: 0;
     right: 0;
-    background-color:#25d366;
     border-radius:50px;
     text-align:center;
     font-size:1.875rem;
@@ -424,10 +427,6 @@ footer .col-contacto{
     align-items: center;
 }
 
-.whatsapp-icon {
-    color:#FFF;
-    /* margin-top:13px; */
-}
 
 
 /******************************* ABOUT *************************************/
@@ -729,6 +728,9 @@ footer .col-contacto{
         top:2em;
     }
 
+    .vector-nav{
+        margin-top: -1rem;}
+
     .row-img-second{
         margin-left: 1rem;
         margin-top:0
@@ -909,6 +911,10 @@ footer .col-contacto{
 
 
 @media only screen and (min-width: 300px) and (max-width: 580px){
+
+    .vector-nav__img{
+        height: 32%;
+    }
     
     footer .col-3{
         width: 40%;
@@ -983,6 +989,11 @@ footer .col-contacto{
 }
 
 @media only screen and (max-width: 300px){
+
+    .vector-nav__img{
+        height: 28%;
+    }
+
     #carousel .h1-carousel{
         width: 80%!important;
         bottom: 2.5rem;
@@ -1014,4 +1025,11 @@ footer .col-contacto{
     .row-img-second{
         margin-top: 1rem;
     }
+}
+
+@media only screen and (min-width: 1350px){
+    .vector-nav{
+        margin-top: -3rem;
+    }
+
 }
