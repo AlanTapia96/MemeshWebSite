@@ -8,11 +8,13 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2e628165bc.js" crossorigin="anonymous"></script>
     <!-- BOOTSTRAP -->
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100;1,200&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/themes/splide-skyblue.min.css">
 </head>
 <body>
   <a href="https://api.whatsapp.com/send?phone=+541161841307&amp;text=Hola!%20" class="whatsapp" target="_blank"><img src="./assets/FAB-whatsapp.png"></a>
@@ -295,7 +297,58 @@
         </section>
 
 
-        
+        <section id="carousel-vegan" class="container">
+          <h3 class="cards-title">Opciones veganas</h3>
+          <p>Todas las tortas se pueden veganizar y están cubiertas con crema vegetal.</p>
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="carousel-vegan__cards">
+                    <div class="d-flex justify-content-start align-items-center"><i class="far fa-heart"></i><h4>Vegan Devil’s cake</h4></div>
+                    <p>Bizcocho de chocolate humedo y relleno de crema Bariloche vegana.</p>
+                  </div>            
+                </li>
+                <li class="splide__slide">
+                  <div class="carousel-vegan__cards">
+                    <div class="d-flex justify-content-start align-items-center"><i class="far fa-heart"></i><h4>Vegan Carrot Cake</h4></div>
+                    <p>Bizcocho de zanahoria con nueces relleno de crema de castañas de caju.</p>
+                  </div>            
+                </li>
+                <li class="splide__slide">
+                  <div class="carousel-vegan__cards">
+                    <div class="d-flex justify-content-start align-items-center"><i class="far fa-heart"></i><h4>Vegan Nina Banana</h4></div>
+                    <p>Bizcocho de banana y chocolate relleno de dulce de leche vegano, chocolate y salted caramel.</p>
+                  </div>            
+                </li>
+                <li class="splide__slide">
+                  <div class="carousel-vegan__cards">
+                    <div class="d-flex justify-content-start align-items-center"><i class="far fa-heart"></i><h4>Vegan Cobra Cake</h4></div>
+                    <p>Bizcocho de limon y amapolas relleno de lemon curd.</p>
+                  </div>            
+                </li>
+                <li class="splide__slide">
+                  <div class="carousel-vegan__cards">
+                    <div class="d-flex justify-content-start align-items-center"><i class="far fa-heart"></i><h4>Vegan Cumpleañitos</h4></div>
+                    <p>Bizcocho de vainilla relleno de dulce de leche vegetal.</p>
+                  </div>                    
+                </li>
+              </div>
+              </ul>    
+          </div>
+        </section>
+
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"></li>
+              <li class="splide__slide">Slide 02</li>
+              <li class="splide__slide">Slide 03</li>
+            </ul>
+          </div>
+        </div>
+
+
         <section id="cards">
           <div class="container my-5">
             <div class="row text-center align-top">
@@ -336,8 +389,13 @@
           </div>
         </section>
 
+        
+
 
     </main>
+
+    
+
 
     <div class="vector-footer">
       <img class="vector-nav__img" src="./assets/vector-footer.png">
@@ -392,9 +450,11 @@
       </footer>
 
 
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
 <script src="./js/scrollAnimate.js"></script>   
+<script src="./js/splide.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
