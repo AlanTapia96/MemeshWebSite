@@ -641,7 +641,7 @@ footer .col-contacto{
 
 #carousel-vegan__cards-container, #carousel-savors__cards-container{
     width: 95%;
-    margin: 1rem 2rem;
+    margin: 1rem 1rem;
     display: flex;
     justify-content: left;
     background-color: #FFF;
@@ -660,12 +660,13 @@ footer .col-contacto{
     padding: 1.5rem;
     background-color: rgba(246, 246, 246, 1);
     position: relative;
-    border-radius: 15%;
-    transition: 2s;
+    border-radius: 1.5rem;
+    transition: .5s;
     margin: 1rem;
     padding-top: 2.5rem;
-    left: 0rem;
+    left: 0px;
 }
+
 
 .carousel-savors__cards  > div, .carousel-vegan__cards > div{
     width: 100%;
@@ -720,6 +721,42 @@ footer .col-contacto{
 
 #carousel-vegan .span-div{
     top: 57%;
+}
+
+
+/***********************************SPLIDE*************************************/
+.splide__track{
+    width: 92%;
+    margin: auto;
+}
+
+.splide__slide{
+    width: 22rem!important;
+    margin-right: 2rem!important;
+}
+
+.splide__pagination{
+    display:none!important;
+}
+
+.splide__arrow{
+    width: 3rem;
+    height: 3rem;
+}
+
+.splide__arrow svg{
+    padding: 0.5rem;
+    fill: rgba(246, 159, 159, 1)!important;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.splide__arrow--next{
+    right: 0!important;
+}
+
+.splide__arrow--prev{
+    left: 0!important;
 }
 
 

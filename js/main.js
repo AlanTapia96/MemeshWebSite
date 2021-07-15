@@ -10,7 +10,12 @@ d.addEventListener("DOMContentLoaded", e =>{
         if(parentElement.classList[1] == "right" || parentElement.classList[1] == "left"){
             let direction = e.target.parentElement.classList[1];
             let divChilds = e.target.parentElement.parentElement.nextSibling.nextSibling.querySelectorAll('div');
-            carousel(direction,divChilds);
+            let widthDivParent = e.target.parentElement.parentElement.nextSibling.nextSibling.clientWidth;
+            let cantDivChilds = divChilds.length;
+            let posLastDiv = divChilds[divChilds.length - 1].getBoundingClientRect().x;
+            // console.log('position last div' + divChilds[divChilds.length - 1].getBoundingClientRect().x);
+            // console.log('width ' + widthDivParent);
+            carousel(direction,divChilds,widthDivParent,cantDivChilds,posLastDiv);
         }
     })
 
