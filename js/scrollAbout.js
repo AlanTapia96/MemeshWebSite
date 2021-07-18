@@ -12,6 +12,7 @@ sr.reveal('#about .col-8',{
     distance: '300px'
 })
 
+ScrollReveal().reveal('#cards', {delay: 400});
 
 
 
