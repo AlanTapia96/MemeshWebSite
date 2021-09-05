@@ -430,7 +430,7 @@ footer .col-contacto{
 }
 
 .vector-footer{
-    height: 9.5vh;
+    height: 10.5vh;
     position: relative;
     top: 2.9rem;
 }
@@ -455,11 +455,11 @@ footer .col-contacto{
 
 /******************************* ABOUT *************************************/
 #about{
-    margin-top:10rem!important;
+    margin-top:7rem!important;
 }
 
 .cards-responsive{
-    padding-bottom: 21rem;
+    padding-bottom: 20rem;
 }
 
 
@@ -507,7 +507,8 @@ footer .col-contacto{
 /*************************CATALOGO*****************************/
 
 #celebraciones{
-    margin-top: 6rem;
+    margin-top: 3rem;
+    padding-top: 2rem!important;
 }
 
 #celebraciones h2, #casamientos h2{
@@ -663,6 +664,10 @@ footer .col-contacto{
     color: rgb(102, 101, 101);
 }
 
+#carousel-vegan{
+    margin-top: -1rem;
+}
+
 #carousel-vegan .span:nth-of-type(2), #carousel-savors .span:nth-of-type(2){
     /* left: 97%; */
     text-align: right;
@@ -778,7 +783,7 @@ footer .col-contacto{
 }
 
 #carousel-savors .splide__arrow{
-    top: 55%;
+    top: 60%;
 }
 
 .splide__arrow svg{
@@ -804,7 +809,8 @@ footer .col-contacto{
 @media only screen and (max-width: 1200px){
 
     #celebraciones{
-        margin-top: 5rem;
+        margin-top: 0;
+        padding-top: 2rem;
     }
 
     .vector-footer{
@@ -911,6 +917,11 @@ footer .col-contacto{
         height: 10rem;
     }
 
+    #celebraciones{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
 }
 
 @media only screen and (max-width: 768px){
@@ -980,20 +991,15 @@ footer .col-contacto{
         left: 1.30rem;
     }
 
-    .row-img-second{
-        margin-left: 0rem;
-        margin-top: 1rem;
-    } 
-
     .row-img-second img {
         height: 8rem
     }
 
 
-    .row-img-first img {
+    /* .row-img-first img {
         height: auto;
         width: 100%;
-    }
+    } */
 
     .row-img-second img{
         height: 9rem;
@@ -1017,6 +1023,10 @@ footer .col-contacto{
 
 @media only screen and (min-width: 300px) and (max-width: 580px){
 
+    #about{
+        margin-top: 2.5rem!important;
+    }
+
     .card{
         min-height: 7rem!important;
         height: auto!important;
@@ -1029,9 +1039,6 @@ footer .col-contacto{
         text-align: left;
     }
 
-    /* .carousel-item img{
-        height:40vh;
-    } */
 
     #carousel .h1-carousel{
         width: 78%!important;
@@ -1058,13 +1065,24 @@ footer .col-contacto{
     }
 
     .carousel-savors__cards,.splide__slide{
-        width: 22rem!important;
-        margin-left: 0rem;
-        left: .6rem;
+        width: 11.5rem!important;
+        margin-left: 5rem;
+        left: -4.2rem;
+
+    }
+
+    .carousel-savors__cards, .carousel-vegan__cards{
+        min-width: 16.875rem;
+        height: 12rem;
     }
 
     .carousel-vegan__cards{
-        left: .6rem;
+        left: 2rem;
+        height: 12rem;
+    }
+
+    .carousel-savors__cards{
+        left: -3.3rem;
     }
 
     .card-body div{
@@ -1119,6 +1137,7 @@ footer .col-contacto{
     }
 }
 
+
 @media only screen and (max-width: 300px){
 
     .vector-nav__img,.vector-footer__img{
@@ -1139,11 +1158,50 @@ footer .col-contacto{
 
 }
 
+@media only screen and (min-width: 320px) and (max-width: 425px){
+    .carousel-savors__cards {
+        width: 12.5rem!important;
+        margin-left: 5rem;
+        left: -3em;
+    }
+
+    .carousel-vegan__cards {
+        min-width: 16.875rem;
+        height: 12rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 320px){
+    .carousel-vegan__cards{
+        min-width: 13.875rem;
+        height: 14rem;
+        left: 1.6rem;
+    }
+
+    .carousel-savors__cards{
+        min-width: 13.875rem;
+        height: 12rem;
+        left: -3.4rem;
+    }
+
+    .splide__slide {
+        width: 11.5rem!important;
+        margin-left: 2rem;
+        left: -6.4rem
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .cards-responsive{
+        padding-bottom: 17rem;
+    }
+}
 
 @media only screen and (min-width: 1200px){
 
-    
-    
+
     .vector-nav{
         margin-top: -2rem;
     }
@@ -1170,7 +1228,7 @@ footer .col-contacto{
 @media only screen and (min-width: 1400px){
 
     #celebraciones{
-        padding-top: .1rem;
+        margin-top: 4rem;
     }
 
     /* .vector-nav__img{
