@@ -623,6 +623,7 @@ footer .col-contacto{
 .row-img-first img{
     height:29rem;
     width:34rem;
+	max-height: 472px
 }
 
 .row-img-second img{
